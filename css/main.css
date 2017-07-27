@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+html {
+	height: 100%;
+	background: url("../img/banner.jpg") center 0 no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+	display: block;
+	color: #4E4E4E;
+	font: 16px/1.7 "Roboto", sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	background: transparent;
+	font-weight: 300;
+}
+/* Header */
+
+.header {
+	margin-top: 15px;
+	margin-bottom: 45px;
+}
+
+.header h1.name {
+	font-size: 48px;
+	color: #FFF;
+	margin: 0;
+	text-transform: uppercase;
+}
+.header h3.designation {
+	color: rgba(255, 255, 255, 0.65);
+	font-weight: normal;
+	margin: 0;
+}
+.header .social .txt{
+	color: #FFF;
+	text-decoration: none;
+}
+.header .social a{
+	text-decoration: none;
+}
+
+
+/*BODY*/
+
+.page {
+	background: #FFF;
+	min-height: 700px;
+	padding: 0 60px;
+}
+/*Sections*/
+.section-margin {
+	margin: 45px 0;
+}
+.section-h2 {
+	margin: 0;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.icon-circle {
+	border-radius: 100%;
+	height: 64px;
+	width: 64px;
+	background: rgba(0, 160, 159, .65);
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 16px;
+	margin-right: 15px;
+}
+.icon-circle .fa {
+	color: #FFF;
+	font-size: 32px;
+}
+
+/*Time line*/
+
+.time-line {
+	margin-left: 32px;
+	padding-left: 47px;
+	position: relative;
+}
+.time-line:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: -1px ;
+	top: 4px;
+	bottom: 0;
+	border-left: 1px solid #E5E5E4;
+}
+.time-line .time:before {
+	content: '';
+	display: block;
+	border-radius: 100%;
+	height: 16px;
+	width: 16px;
+	background: #E5E5E4;    
+	margin-left: -56px;
+  position: absolute;
+	margin-top: 4px;
+}
+.time-line .date {
+	color: #666;
+}
+.time-line .role {
+	font-weight: normal;
+}
+.time-line .time:not(:first-child) {
+	margin-top: 45px;
+}
+
+/*Tech*/
+.tech-label .label{
+	background: rgba(0, 160, 159, .65);
+	font-weight: normal;
+}
+.tech {
+	margin: 0;
+	padding: 0;
+}
+.tech li {
+	text-align: center;
+	font-size: 12px;
+	font-weight: normal;	
+	display: inline-block;
+	margin: 10px;
+}
+
+.tech li span{
+	display: inline-block;
+	border-radius: 100%;
+	height: 64px;
+	width: 64px;
+	background: rgba(0, 160, 159, .65);
+	margin-bottom: 10px;
+	color: #FFF;
+	line-height: 64px;
+}
+.work-sample a {
+	text-decoration: none;
+	color: rgba(0, 160, 159, .65);
+}
+
+/*Footer*/
+
+footer {
+	color: #FFF;
+	padding: 15px;
+}
