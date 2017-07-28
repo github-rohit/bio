@@ -311,3 +311,22 @@ footer {
 	}
 	
 }
+
+.versionlink {
+	padding: 2px 12px;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	right: 0;
+	top: 10px;	
+	color: #FFF;
+	font-size: 12px;
+	text-decoration: none;
+}
+.versionlink:hover,
+.versionlink:active,
+.versionlink:focus {
+	background: rgba(0, 0, 0, 0.2);
+	color: #FFF;
+	text-decoration: none;
+}
