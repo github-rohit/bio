@@ -8,20 +8,10 @@
 			height: winHeight - 64
 		});
 	};
-	
-	var fixNavbar = function () {
-		
-	}
-	
-	
-	
-	
-	
+
 	setHeight();
 	
-	$(win).on('scroll', function(){
-		fixNavbar();
-	}).on('resize', function(){
+	$(win).on('resize', function(){
 		setHeight();
 	});
 	
