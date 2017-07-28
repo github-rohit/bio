@@ -277,6 +277,27 @@ footer {
 	background: rgba(0, 0, 0, 0.2);
 }
 
+.versionlink {
+	padding: 2px 12px;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	right: 0;
+	top: 10px;	
+	color: #FFF;
+	font-size: 12px;
+	text-decoration: none;
+}
+.versionlink:hover,
+.versionlink:active,
+.versionlink:focus {
+	background: rgba(0, 0, 0, 0.2);
+	color: #FFF;
+	text-decoration: none;
+}
+
+
+/*MEDIA*/
 @media (min-width: 768px) {
 	.navbar ul li a {
 		
@@ -302,6 +323,23 @@ footer {
 }
 
 @media (max-width: 500px) {
+	
+	.header {
+		margin-bottom: 15px;
+	}
+	.header .social {
+		margin-top: 15px;
+	}
+	.header .col-xs-8,
+	.header .col-xs-4 {
+		width: 100%;
+	}
+	
+	.page {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
 	.hero h1 { 
 		font-size: 48px;
 	}
@@ -310,23 +348,22 @@ footer {
 		font-size: 24px;
 	}
 	
-}
-
-.versionlink {
-	padding: 2px 12px;
-	display: inline-block;
-	background: rgba(0, 0, 0, 0.1);
-	position: absolute;
-	right: 0;
-	top: 10px;	
-	color: #FFF;
-	font-size: 12px;
-	text-decoration: none;
-}
-.versionlink:hover,
-.versionlink:active,
-.versionlink:focus {
-	background: rgba(0, 0, 0, 0.2);
-	color: #FFF;
-	text-decoration: none;
+	.icon-circle {
+		height: 48px;
+    width: 48px;
+		vertical-align: inherit;
+		padding-top: 8px;
+	}
+	
+	.icon-circle .fa {
+		font-size: 24px;
+	}
+	
+	.time-line {
+		margin-left: 24px;
+		padding-left: 39px;
+	}
+	.time-line .time:before {
+		margin-left: -48px;
+	}
 }
