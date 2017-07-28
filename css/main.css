@@ -2,7 +2,7 @@
 
 html {
 	height: 100%;
-	background: url("../img/banner.jpg") center 0 no-repeat fixed;
+	background: url("../img/banner.png") center 0 no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -33,11 +33,13 @@ body {
 	color: #FFF;
 	margin: 0;
 	text-transform: uppercase;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, .5);
 }
 .header h3.designation {
-	color: rgba(255, 255, 255, 0.65);
+	color: #FFF;
 	font-weight: normal;
 	margin: 0;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 }
 .header .social .txt{
 	color: #FFF;
@@ -153,6 +155,6 @@ body {
 /*Footer*/
 
 footer {
-	color: #FFF;
 	padding: 15px;
+	background: #d8edf3;
 }
