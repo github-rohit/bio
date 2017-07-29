@@ -197,7 +197,7 @@ footer {
 
 .hero {
 	height: 300px;
-	background: url("../img/banner_4.png") center 0 no-repeat fixed;
+	background: url("../img/banner_4.png") center 0 no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
