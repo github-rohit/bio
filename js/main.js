@@ -17,7 +17,19 @@
 			})
 		})
 	};
+	
+	var getMobileOperatingSystem = function () {
+		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
+			// iOS detection from: http://stackoverflow.com/a/9039885/177710
+			if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				$('html').css({
+					'background-attachment': 'initial'
+				})
+			}
+	};
+	
+	getMobileOperatingSystem();
 	setHeight();
 	setminHeight();
 	
