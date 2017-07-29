@@ -21,8 +21,8 @@
 	var getMobileOperatingSystem = function () {
 		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 			// iOS detection from: http://stackoverflow.com/a/9039885/177710
-			if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-				var css = 'html { background-attachment: initial;; }',
+			if (!(/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream)) {
+				var css = 'html { background-attachment: fixed; }',
 				head = document.head || document.getElementsByTagName('head')[0],
 				style = document.createElement('style');
 
