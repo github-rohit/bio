@@ -123,7 +123,8 @@ body {
 	color: #666;
 }
 .time-line .role {
-	font-weight: normal;
+	font-weight: lighter;
+	font-style: italic;
 }
 .time-line .time:not(:first-child) {
 	margin-top: 45px;
@@ -136,7 +137,7 @@ body {
 	background: #FFF;
 }
 .section-color .time-line .date {
-	color: #CCC;
+	color: #DDD;
 }
 /*Tech*/
 .tech-label .label{
