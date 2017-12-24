@@ -1,0 +1,163 @@
+@import url('//fonts.googleapis.com/css?family=Merriweather:300,300i,700|Open+Sans:400,700');
+
+body {
+	display: block;
+	color: #3f3f3f;
+	font: 14px/1.7 'Merriweather', serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	background: transparent;
+	font-weight: 300;
+	word-wrap: break-word;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	line-height: 1.7;
+}
+
+h1.name {
+	font-family: 'Merriweather', serif;
+	color: #000;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1;
+}
+h2.title {
+	color: #666;
+	font-size: 18px;
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.small-summary {
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	margin-bottom: 0;
+}
+.main-section-right p{
+	margin-bottom: 5px; 
+}
+
+section {
+	margin-top: 48px;
+}
+.main-section {
+	padding-top: 32px;
+}
+h2.section-heading {
+	font-size: 14px;
+	color: #2079c7;
+}
+h2.section-heading + .margin-top {
+	margin-top: auto;
+}
+h3.section-sub-heading {
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #000;
+	margin-bottom: 5px;
+}
+h3.section-sub-heading + .text-muted {
+	color: #999;
+	font-family: 'Open Sans', sans-serif;
+}
+.margin-top {
+	margin-top: 32px;
+}
+ul {
+	padding-left: 20px;
+	list-style-type: lower-greek
+}
+ul li {
+	margin-bottom: 10px;
+}
+.footer-padding {
+	padding: 32px;
+}
+
+.mobile-show {
+	display: none !important;
+}
+
+.versionlink {
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	right: 0;
+	top: 10px;	
+	color: #FFF;
+	font-size: 12px;
+	text-decoration: none;
+	z-index: 101;
+}
+.versionlink a {
+	padding: 2px 12px;
+	display: inline-block;
+	color: #000;
+	font-size: 12px;
+	text-decoration: none;
+}
+.versionlink a:hover,
+.versionlink a:active,
+.versionlink a:focus {
+	background: rgba(0, 0, 0, 0.2);
+	color: #FFF;
+	text-decoration: none;
+}
+
+@media (min-width: 768px){
+	.container {
+		width: 100%;
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+    width: 960px;
+	}
+}
+
+@media (max-width: 768px) {
+	.mobile-hide {
+		display: none !important;
+	}
+	.mobile-show {
+		display: block !important;
+	}
+	
+	.main-section-right p {
+		margin: 0; 
+		display: inline-block;
+		margin-right: 10px;
+	}
+	
+	.mobile-ul {
+		padding: 0;
+	}	
+	.mobile-ul li {
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 2px;
+	}
+	.main-section-right p:not(:last-child):after,
+	.mobile-ul li:not(:last-child):after {
+		content: ",";
+	}
+}
+
+
+
+

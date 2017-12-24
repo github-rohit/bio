@@ -13,6 +13,8 @@ body {
 	background: transparent;
 	font-weight: 300;
 }
+
+
 /* Header */
 
 .header-fix {
@@ -279,7 +281,6 @@ footer {
 }
 
 .versionlink {
-	padding: 2px 12px;
 	display: inline-block;
 	background: rgba(0, 0, 0, 0.1);
 	position: absolute;
@@ -290,9 +291,16 @@ footer {
 	text-decoration: none;
 	z-index: 101;
 }
-.versionlink:hover,
-.versionlink:active,
-.versionlink:focus {
+.versionlink a {
+	padding: 2px 12px;
+	display: inline-block;
+	color: #FFF;
+	font-size: 12px;
+	text-decoration: none;
+}
+.versionlink a:hover,
+.versionlink a:active,
+.versionlink a:focus {
 	background: rgba(0, 0, 0, 0.2);
 	color: #FFF;
 	text-decoration: none;
