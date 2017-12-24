@@ -12,6 +12,7 @@ body {
 	-ms-backface-visibility: hidden;
 	background: transparent;
 	font-weight: 300;
+	word-wrap: break-word;
 }
 
 
