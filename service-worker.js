@@ -7,15 +7,8 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open(CACHE_STATIC_NAME).then((cache) => {
             cache.addAll([
-                '/manifest.json',
-                '/',
-                'index.html',
-                'img/favicon.png',
                 '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
-                '/css/font-awesome.min.css',
-                '/css/main.css',
                 '//code.jquery.com/jquery-3.1.0.js',
-                '/js/main.js',
             ]);
         }).catch((err) => {
             console.log(err);
