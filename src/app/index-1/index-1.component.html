@@ -1,0 +1,111 @@
+<ng-container *ngIf="show">
+  <span class="versionlink">
+    <a href="/">Version 1</a>
+  </span>
+  <div class="container">
+    <div class="row main-section">
+      <div class="col-md-9 col-sm-8">
+        <h1 class="name">{{ data.short_name }}</h1>
+        <h2 class="title">{{ data.title }}</h2>
+        <p class="small-summary" [innerHTML]="data.summary.description"></p>
+
+      </div>
+      <div class="col-md-3 col-sm-4 main-section-right">
+        <p class="mobile-hide">Noida 201301 (U.P)</p>
+        <p>
+          <a href="//github-rohit.github.io/bio/">nirmalrohit.com</a>
+        </p>
+        <p>
+          <a href="//linkedin.com/in/nirmalrohit">
+            <i class="fa fa-linkedin"></i> /nirmalrohit</a>
+        </p>
+        <p>
+          <a href="//twitter.com/nirmalrohit">
+            <i class="fa fa-twitter"></i> @nirmalrohit</a>
+        </p>
+      </div>
+    </div>
+    <div class="row mobile-show">
+      <div class="col-md-12">
+        <section>
+          <h2 class="section-heading">{{ data.summary.heading }}</h2>
+          <ul>
+            <li *ngFor="let point of data.summary.points" [innerHtml]="point"></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-md-push-9 col-sm-4 col-sm-push-8">
+          <section>
+            <h2 class="section-heading">{{ data.worksample.label }}</h2>
+            <ng-container *ngFor="let item of data.worksample.description">
+              <h3 class="section-sub-heading">{{item.short_heading || item.heading}}</h3>
+              <ng-container *ngFor="let project of item.project">
+                <p>
+                  <a [href]="project.url">{{ project.label }}</a>
+                </p>
+              </ng-container>
+            </ng-container>
+          </section>
+        <section>
+          <h2 class="section-heading">{{ data.skills.label }}</h2>
+          <ng-container *ngFor="let item of data.skills.description">
+            <h3 class="section-sub-heading margin-top">{{ item.label }}</h3>
+            <ul class="mobile-ul">
+              <li *ngFor="let skill of item.skills">{{ skill.short_name }}</li>
+            </ul>
+          </ng-container>
+        </section>
+        <section class="mobile-hide">
+            <h2 class="section-heading">{{ data.education.label }}</h2>
+            <ng-container *ngFor="let item of data.education.description">
+            <h3 class="section-sub-heading">
+              <strong>{{ item.company }}</strong>
+            </h3>
+            <div>
+              <i>{{ item.role }}</i>
+            </div>
+            <p class="small text-muted">{{ item.from }} <ng-container *ngIf="item.to" >- {{ item.to }}</ng-container></p>
+            <p>{{ item.description }}, {{ item.location }}</p>
+          </ng-container>
+          </section>
+      </div>
+      <div class="col-md-9 col-md-pull-3 col-sm-8 col-sm-pull-4">
+        <section class="mobile-hide">
+          <h2 class="section-heading">{{ data.summary.heading }}</h2>
+          <ul>
+              <li *ngFor="let point of data.summary.points" [innerHtml]="point"></li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="section-heading">{{ data.experience.label }}</h2>
+          <ng-container *ngFor="let item of data.experience.description">
+              <h3 class="section-sub-heading margin-top">
+                  <strong>{{ item.company }}</strong>, {{ item.location }} -
+                  <i>{{ item.role }}</i>
+                </h3>
+                <p class="small text-muted">{{ item.from }} - {{ item.to }}</p>
+                <p [innerHTML]="item.description"></p>
+                <ul>
+                    <li *ngFor="let point of item.points" [innerHTML]="point"></li>
+                </ul>
+          </ng-container>
+        </section>
+        <section class="mobile-show">
+            <h2 class="section-heading">{{ data.education.label }}</h2>
+            <ng-container *ngFor="let item of data.education.description">
+            <h3 class="section-sub-heading margin-top">
+              <strong>{{ item.company }}</strong>
+            </h3>
+            <div>
+              <i>{{ item.role }}</i>
+            </div>
+            <p class="small text-muted">{{ item.from }} <ng-container *ngIf="item.to" >- {{ item.to }}</ng-container></p>
+            <p>{{ item.description }}, {{ item.location }}</p>
+          </ng-container>
+          </section>
+      </div>
+    </div>
+  </div>
+</ng-container>

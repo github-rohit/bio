@@ -1,0 +1,85 @@
+<ng-container *ngIf="show">
+<section id="rs-hero" class="hero clearfix" [ngStyle]="{'minHeight' : minHeight}">
+  <span class="versionlink"><a href="/indexv1">Version 2</a></span>
+  <div>
+    <h1>Hi i am {{ data.short_name }}</h1>
+    <h4>{{ data.title }}</h4>
+  </div>
+</section>
+<header id="rs-header" class="header-fix" *ngIf="data.title">
+  <nav class="navbar">
+    <ul>
+      <li class="ui-menu-color02"><a (click)="goToSection('#summary')" href="javascript:void(0)"><i class="fa fa-file-text"></i><span>{{ data.summary.heading }}</span></a></li>
+      <li class="ui-menu-color05"><a (click)="goToSection('#skills')" href="javascript:void(0)"><i class="fa fa-magic"></i><span>{{ data.skills.label }}</span></a></li>
+      <li class="ui-menu-color03"><a (click)="goToSection('#worksample')" href="javascript:void(0)"><i class="fa fa-cubes"></i><span>{{ data.worksample.label }}</span></a></li>
+      <li class="ui-menu-color04"><a (click)="goToSection('#experience')" href="javascript:void(0)"><i class="fa fa-briefcase"></i><span>{{ data.experience.label }}</span></a></li>
+      <li class="ui-menu-color01"><a (click)="goToSection('#education')" href="javascript:void(0)"><i class="fa fa-graduation-cap"></i><span>{{ data.education.label }}</span></a></li>
+    </ul>
+  </nav>
+</header>
+<section *ngIf="data.summary" id="summary" data-min-height class="section-color ui-menu-color02" [ngStyle]="{'minHeight' : minHeight}">
+  <div class="container">
+    <h2 class="section-h2">{{ data.summary.heading }}</h2>
+    <p class="font-montserrat-bold" [innerHTML]="data.summary.description"></p>
+    <ul>
+      <li *ngFor="let point of data.summary.points" [innerHtml]="point"></li>
+    </ul>
+  </div>
+</section>
+<section *ngIf="data.skills" id="skills" data-min-height class="section-color ui-menu-color05" [ngStyle]="{'minHeight' : minHeight}">
+  <div class="container">
+    <h2 class="section-h2"><span class="icon-circle"><i class="fa fa-magic"></i></span> {{ data.skills.label }}</h2>
+    <div class="time-line">
+      <div class="time" *ngFor="let item of data.skills.description">
+        <p><strong>{{ item.label }}</strong></p>
+        <ul class="tech">
+          <li class="item" *ngFor="let skill of item.skills"><span>{{ skill.name }}</span><br>{{ skill.short_name }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section *ngIf="data.worksample" id="worksample" data-min-height class="section-color ui-menu-color03" [ngStyle]="{'minHeight' : minHeight}">
+  <div class="container">
+  <h2 class="section-h2"><span class="icon-circle"><i class="fa  fa-cubes"></i></span> {{ data.worksample.label }}</h2>
+  <div class="time-line work-sample">
+    <div class="time" *ngFor="let item of data.worksample.description">
+      <p><strong>{{ item.heading }}</strong></p>
+      <ng-container *ngFor="let project of item.project">
+        <p><a [href]="project.url"><span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa {{ project.icon }} fa-stack-1x fa-inverse"></i>
+      </span> <span class="txt" style="word-wrap: break-word">{{ project.label }}</span></a></p>
+      </ng-container>
+    </div>
+  </div>
+  </div>
+</section>
+<section *ngIf="data.experience" id="experience" data-min-height class="section-color ui-menu-color04 " [ngStyle]="{'minHeight' : minHeight}">
+  <div class="container">
+    <h2 class="section-h2"><span class="icon-circle"><i class="fa fa-briefcase"></i></span>{{ data.experience.label }}</h2>
+    <div class="time-line">
+      <div class="time" *ngFor="let item of data.experience.description">
+        <p class="date">{{ item.from }} - {{ item.to }} <strong>{{ item.company }}</strong>,	{{ item.location }}</p>
+        <h4 class="role"><strong>Role:</strong> {{ item.role }}</h4>
+        <p [innerHTML]="item.description"></p>
+        <ul>
+          <li *ngFor="let point of item.points" [innerHTML]="point"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section *ngIf="data.education" id="education" data-min-height class="section-color ui-menu-color01" [ngStyle]="{'minHeight' : minHeight}">
+  <div class="container">
+    <h2 class="section-h2"><span class="icon-circle"><i class="fa fa-graduation-cap"></i></span>{{ data.education.label }}</h2>
+    <div class="time-line">
+      <div class="time" *ngFor="let item of data.education.description">
+        <p>{{ item.from }} <ng-container *ngIf="item.to" >- {{ item.to }}</ng-container><strong> {{ item.company }}</strong></p>
+        <h4 class="role" *ngIf="item.role">{{ item.role }}</h4>
+        <p>{{ item.description }}<br> {{ item.location }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+</ng-container>
