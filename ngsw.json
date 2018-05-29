@@ -29,9 +29,30 @@
         "https://github-rohit.github.io/bio/assets/manifest.json"
       ],
       "patterns": []
+    },
+    {
+      "name": "cdn",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": [
+        "https:\\/\\/maxcdn\\.bootstrapcdn\\.com\\/bootstrap\\/3\\.3\\.7\\/css\\/bootstrap\\.min\\.css",
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Roboto:300,400,500,700",
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Merriweather:300,300i,700|Open\\+Sans:400,500"
+      ]
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "data",
+      "patterns": [
+        "https:\\/\\/about-my-bio\\.firebaseio\\.com\\/bio\\.json"
+      ],
+      "strategy": "freshness",
+      "maxAge": 0,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "https://github-rohit.github.io/bio/assets/css/font-awesome.min.css": "05ea25bc9b3ac48993e1fee322d3bc94b49a6e22",
     "https://github-rohit.github.io/bio/assets/fonts/FontAwesome.otf": "0112e96f327d413938d37c1693806f468ffdbace",
