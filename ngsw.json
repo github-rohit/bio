@@ -42,7 +42,10 @@
       "patterns": [
         "https:\\/\\/maxcdn\\.bootstrapcdn\\.com\\/bootstrap\\/3\\.3\\.7\\/css\\/bootstrap\\.min\\.css",
         "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Roboto:300,400,500,700",
-        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Merriweather:300,300i,700|Open\\+Sans:400,500"
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Merriweather:300,300i,700|Open\\+Sans:400,500",
+        "https:\\/\\/github-rohit\\.github\\.io\\/bio\\/index",
+        "https:\\/\\/github-rohit\\.github\\.io\\/bio\\/indexv1",
+        "https:\\/\\/github-rohit\\.github\\.io\\/bio\\/"
       ]
     }
   ],
