@@ -1,0 +1,75 @@
+{
+  "configVersion": 1,
+  "index": "https://github-rohit.github.io/bio/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://github-rohit.github.io/bio/favicon.ico",
+        "https://github-rohit.github.io/bio/index.html",
+        "https://github-rohit.github.io/bio/inline.035c8c0a205dde831f6f.bundle.js",
+        "https://github-rohit.github.io/bio/main.298d41631d749ca8a560.bundle.js",
+        "https://github-rohit.github.io/bio/polyfills.efc360660182ac20df4d.bundle.js",
+        "https://github-rohit.github.io/bio/styles.1352d7437d5dc050ca1f.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://github-rohit.github.io/bio/assets/css/font-awesome.min.css",
+        "https://github-rohit.github.io/bio/assets/fonts/FontAwesome.otf",
+        "https://github-rohit.github.io/bio/assets/fonts/fontawesome-webfont.eot",
+        "https://github-rohit.github.io/bio/assets/fonts/fontawesome-webfont.svg",
+        "https://github-rohit.github.io/bio/assets/fonts/fontawesome-webfont.ttf",
+        "https://github-rohit.github.io/bio/assets/fonts/fontawesome-webfont.woff",
+        "https://github-rohit.github.io/bio/assets/fonts/fontawesome-webfont.woff2",
+        "https://github-rohit.github.io/bio/assets/images/banner_4.png",
+        "https://github-rohit.github.io/bio/assets/images/logo_blue.png",
+        "https://github-rohit.github.io/bio/assets/manifest.json"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://github-rohit.github.io/bio/assets/css/font-awesome.min.css": "05ea25bc9b3ac48993e1fee322d3bc94b49a6e22",
+    "https://github-rohit.github.io/bio/assets/fonts/FontAwesome.otf": "0112e96f327d413938d37c1693806f468ffdbace",
+    "https://github-rohit.github.io/bio/assets/fonts/fontawesome-webfont.eot": "b3c2f08e73320135b69c23a3908b87a12053a2f6",
+    "https://github-rohit.github.io/bio/assets/fonts/fontawesome-webfont.svg": "2b3c8ba7008cc014d8fb37abc6f9f49aeda83824",
+    "https://github-rohit.github.io/bio/assets/fonts/fontawesome-webfont.ttf": "27cf1f2ec59aece6938c7bb2feb0e287ea778ff9",
+    "https://github-rohit.github.io/bio/assets/fonts/fontawesome-webfont.woff": "507970402e328b2baeb05bde73bf9ded4e2c3a2d",
+    "https://github-rohit.github.io/bio/assets/fonts/fontawesome-webfont.woff2": "574ea2698c03ae9477db2ea3baf460ee32f1a7ea",
+    "https://github-rohit.github.io/bio/assets/images/banner_4.png": "48b8103c815ef1e23719e9365afde9a5ed1fbff7",
+    "https://github-rohit.github.io/bio/assets/images/logo_blue.png": "c0cd4e9c0389a2472985ec572610ccc0d46a4fc6",
+    "https://github-rohit.github.io/bio/assets/manifest.json": "e7f8e38ef75564cedcba9229f2084778eed422de",
+    "https://github-rohit.github.io/bio/favicon.ico": "eda236c64bb6a08104e7129eb813ca4935863814",
+    "https://github-rohit.github.io/bio/index.html": "880073ca38c4f64b70b56d4d8a02335d5c7a9460",
+    "https://github-rohit.github.io/bio/inline.035c8c0a205dde831f6f.bundle.js": "f8a33cfaaf260f6fc2a12b696415cd7e362b50f2",
+    "https://github-rohit.github.io/bio/main.298d41631d749ca8a560.bundle.js": "40f03f76cf9d70a76b031a91953f20fc04420bfe",
+    "https://github-rohit.github.io/bio/polyfills.efc360660182ac20df4d.bundle.js": "03aec6ae7abe86b768e0622a902daf6a89f6c0bd",
+    "https://github-rohit.github.io/bio/styles.1352d7437d5dc050ca1f.bundle.css": "1b5ab001b758cbbb26dcd7d38c3bdf8a0be60ea1"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
