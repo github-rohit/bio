@@ -8,7 +8,11 @@
       "updateMode": "prefetch",
       "urls": [
         "https://github-rohit.github.io/bio/favicon.ico",
-        "https://github-rohit.github.io/bio/index.html"
+        "https://github-rohit.github.io/bio/index.html",
+        "https://github-rohit.github.io/bio/main.643cf6c8e5e6061e8c6e.js",
+        "https://github-rohit.github.io/bio/polyfills.f80b7e6581d9215d226e.js",
+        "https://github-rohit.github.io/bio/runtime.a66f828dca56eeb90e02.js",
+        "https://github-rohit.github.io/bio/styles.e5bd907bbe84b54de83d.css"
       ],
       "patterns": []
     },
@@ -32,7 +36,7 @@
     },
     {
       "name": "cdn",
-      "installMode": "prefetch",
+      "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [],
       "patterns": [
@@ -65,7 +69,11 @@
     "https://github-rohit.github.io/bio/assets/images/logo_blue.png": "c0cd4e9c0389a2472985ec572610ccc0d46a4fc6",
     "https://github-rohit.github.io/bio/assets/manifest.json": "e7f8e38ef75564cedcba9229f2084778eed422de",
     "https://github-rohit.github.io/bio/favicon.ico": "eda236c64bb6a08104e7129eb813ca4935863814",
-    "https://github-rohit.github.io/bio/index.html": "8c34236d24f4db0b155dc07916ce75e5d0c4f513"
+    "https://github-rohit.github.io/bio/index.html": "8c34236d24f4db0b155dc07916ce75e5d0c4f513",
+    "https://github-rohit.github.io/bio/main.643cf6c8e5e6061e8c6e.js": "254103248ff4de66eec6a761e9a564e975112fdb",
+    "https://github-rohit.github.io/bio/polyfills.f80b7e6581d9215d226e.js": "193f6d7b77c2bce633da2f543082303b4f32d7ed",
+    "https://github-rohit.github.io/bio/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "https://github-rohit.github.io/bio/styles.e5bd907bbe84b54de83d.css": "5eba93eb09f32c2bbb1a3fb356663660370cdad1"
   },
   "navigationUrls": [
     {
