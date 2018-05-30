@@ -8,6 +8,11 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getData() {
-    return this.http.get(this.url);
+    return fetch(this.url, {
+      'headers': {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    }).then((response) => response.json());
   }
 }

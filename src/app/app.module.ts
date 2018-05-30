@@ -1,4 +1,3 @@
-import { ServiceWorkerModule } from '@angular/service-worker';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './services/data.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,7 +8,6 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { Index1Component } from './index-1/index-1.component';
 import { Index2Component } from './index-2/index-2.component';
-import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -20,7 +18,6 @@ import { environment } from '../environments/environment';
     Index2Component
   ],
   imports: [
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([{
@@ -32,9 +29,6 @@ import { environment } from '../environments/environment';
     }, {
       path: 'indexv1',
       component: Index1Component
-    }, {
-      path: 'indexv2',
-      component: Index2Component
     }])
   ],
   providers: [

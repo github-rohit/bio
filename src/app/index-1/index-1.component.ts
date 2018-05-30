@@ -13,7 +13,7 @@ export class Index1Component implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getData().subscribe(res => {
+    this.dataService.getData().then(res => {
       this.data = res;
       this.show = true;
     });
