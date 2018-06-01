@@ -22,11 +22,16 @@
 <body>
   <app-root></app-root>
 </body>
+<script src="assets/js/fetch.js"></script>
+<script src="assets/js/promise.js"></script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
       navigator.serviceWorker.register('sw.js');
     });
+  }
+  if (!window.Promise) {
+    window.Promise = Promise;
   }
 </script>
 

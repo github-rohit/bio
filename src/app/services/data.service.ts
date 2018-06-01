@@ -12,7 +12,8 @@ export class DataService {
       'headers': {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
-      }
+      },
+      mode: 'cors',
     }).then((response) => response.json());
   }
 }
