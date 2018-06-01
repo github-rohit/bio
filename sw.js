@@ -65,7 +65,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/js/fetch.js",
-    "revision": "6b82fbb55ae19be4935964ae8c338e92"
+    "revision": "7b573a7b47496b092478720a088dcbc5"
   },
   {
     "url": "assets/js/promise.js",
@@ -85,11 +85,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "a8e5673a7ca3ef7b969d67a5a2b0ef88"
+    "revision": "fd33f449f842eabb1d0b1d18d4355c35"
   },
   {
-    "url": "main.ce5f60bd3ae3cb4739b5.js",
-    "revision": "ebe1204e81c0e06c934eed4397d4c3f3"
+    "url": "main.4741e9a0af67f9af8774.js",
+    "revision": "831ea55039c7e06271c20b0ab1fa896d"
   },
   {
     "url": "polyfills.f80b7e6581d9215d226e.js",
