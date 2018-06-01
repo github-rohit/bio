@@ -73,7 +73,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/manifest.json",
-    "revision": "1829308f7fd1ef47bde054ac008924de"
+    "revision": "c7a899f10fd173d5e6952e668db967c3"
   },
   {
     "url": "banner_4.2362109faa3d4d99aa4c.png",

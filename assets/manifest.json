@@ -1,8 +1,8 @@
 {
     "name": "Rohit Gautam",
     "short_name": "RG", 
-    "start_url": "/",
-    "scope": "/",
+    "start_url": "/bio/",
+    "scope": "/bio/",
     "description": "Author: Rohit Kumar Gautam, Front End Developer, Key skills: Javascript, CSS3, HTML, HTML5, Jquery, Jquery Plugin, Tinymce, Bootstrap, SASS, handlebarsjs, Chrome extension, Mongo, Express, Angularjs, Angular 4, Angular 5 Node, Grunt, Single Page Application, Progressive Web Apps (PWA)",
     "display": "standalone",
     "lang": "en-US",
