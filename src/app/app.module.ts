@@ -7,15 +7,12 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { Index1Component } from './index-1/index-1.component';
-import { Index2Component } from './index-2/index-2.component';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    Index1Component,
-    Index2Component
+    Index1Component
   ],
   imports: [
     BrowserModule,

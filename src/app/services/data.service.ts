@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { map, catchError } from 'rxjs/operators';
 
 @Injectable()
 export class DataService {
@@ -8,12 +9,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getData() {
-    return fetch(this.url, {
-      'headers': {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      mode: 'cors',
-    }).then((response) => response.json());
+    return this.http.get(this.url)
+    .pipe(map((response: any) => response));
   }
 }

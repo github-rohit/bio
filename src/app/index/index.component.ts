@@ -23,7 +23,7 @@ export class IndexComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.dataService.getData().then(res => {
+    this.dataService.getData().subscribe(res => {
       this.data = res;
       this.show = true;
     });
