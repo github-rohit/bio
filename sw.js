@@ -65,11 +65,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/js/fetch.js",
-    "revision": "7b573a7b47496b092478720a088dcbc5"
+    "revision": "7bfef8ad2a7b719e67e4495aa746c847"
   },
   {
     "url": "assets/js/promise.js",
-    "revision": "10c2238dcd105eb23f703ee53067417f"
+    "revision": "94d27232bf21d22b01e8ae7a638644ce"
   },
   {
     "url": "assets/manifest.json",
