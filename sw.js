@@ -11,16 +11,16 @@ workbox.clientsClaim();
 // );
 workbox.routing.registerNavigationRoute('index.html');
 workbox.routing.registerRoute(
-    new RegExp('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'),
-    workbox.strategies.cacheFirst({
-      cacheName: 'image-cache',
-      plugins: [
-        new workbox.cacheableResponse.Plugin({
-          statuses: [0, 200],
-        })
-      ]
-    })
-  );
+  new RegExp('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'),
+  workbox.strategies.cacheFirst({
+    cacheName: 'image-cache',
+    plugins: [
+      new workbox.cacheableResponse.Plugin({
+        statuses: [0, 200],
+      })
+    ]
+  })
+);
 workbox.routing.registerRoute(
   'https://about-my-bio.firebaseio.com/bio.json',
   workbox.strategies.cacheFirst(),
@@ -64,14 +64,6 @@ workbox.precaching.precacheAndRoute([
     "revision": "84f052acdd07bd17eee430bade709a27"
   },
   {
-    "url": "assets/js/fetch.js",
-    "revision": "7bfef8ad2a7b719e67e4495aa746c847"
-  },
-  {
-    "url": "assets/js/promise.js",
-    "revision": "94d27232bf21d22b01e8ae7a638644ce"
-  },
-  {
     "url": "assets/manifest.json",
     "revision": "c7a899f10fd173d5e6952e668db967c3"
   },
@@ -85,11 +77,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "fd33f449f842eabb1d0b1d18d4355c35"
+    "revision": "a1824e48764b2afa9a7acea118c43637"
   },
   {
-    "url": "main.4741e9a0af67f9af8774.js",
-    "revision": "831ea55039c7e06271c20b0ab1fa896d"
+    "url": "main.4756f83f08ee646707c3.js",
+    "revision": "1a0c1a61ca1daa8e4c5e212090d9443b"
   },
   {
     "url": "polyfills.f80b7e6581d9215d226e.js",
