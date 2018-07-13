@@ -56,8 +56,8 @@ workbox.precaching.precacheAndRoute([
     "revision": "668743fe7258676f8ef8f9b47d2a623e"
   },
   {
-    "url": "assets/images/banner_4.png",
-    "revision": "2362109faa3d4d99aa4c0727a80362f4"
+    "url": "assets/images/banner.svg",
+    "revision": "601db52f41254a1e2092a87ddda0b35f"
   },
   {
     "url": "assets/images/logo_blue.png",
@@ -68,16 +68,12 @@ workbox.precaching.precacheAndRoute([
     "revision": "c7a899f10fd173d5e6952e668db967c3"
   },
   {
-    "url": "banner_4.2362109faa3d4d99aa4c.png",
-    "revision": "2362109faa3d4d99aa4c0727a80362f4"
-  },
-  {
     "url": "favicon.ico",
     "revision": "7a95d270c455e9f87ef3f440698285a8"
   },
   {
     "url": "index.html",
-    "revision": "53e7cd88c8a334179728043a2cac3f20"
+    "revision": "c1ceb1422c6f823df096034c7dd7a56f"
   },
   {
     "url": "main.62550dc402998d01660a.js",
@@ -92,7 +88,7 @@ workbox.precaching.precacheAndRoute([
     "revision": "f2c1a0d5e113c332e6bbe7887eb378b2"
   },
   {
-    "url": "styles.e5bd907bbe84b54de83d.css",
-    "revision": "fd6d1622d065540c24b61fc090de4ce9"
+    "url": "styles.34e5e8088bedc8d33e7b.css",
+    "revision": "17c1cfacca3872454982f52cbee4cbd7"
   }
 ]);
