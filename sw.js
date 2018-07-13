@@ -23,7 +23,7 @@ workbox.routing.registerRoute(
 );
 workbox.routing.registerRoute(
   'https://about-my-bio.firebaseio.com/bio.json',
-  workbox.strategies.cacheFirst(),
+  workbox.strategies.staleWhileRevalidate()
 );
 
 workbox.precaching.precacheAndRoute([
@@ -73,11 +73,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "c1ceb1422c6f823df096034c7dd7a56f"
+    "revision": "7e2447dc4b03b7280ea41a76ca1aeb43"
   },
   {
-    "url": "main.62550dc402998d01660a.js",
-    "revision": "b84b5f993d6f72d8d9d924bca4aa0cf0"
+    "url": "main.b24464428bd4c4f9999f.js",
+    "revision": "a9367172f473583110fe693ad822c24d"
   },
   {
     "url": "polyfills.f80b7e6581d9215d226e.js",
@@ -88,7 +88,7 @@ workbox.precaching.precacheAndRoute([
     "revision": "f2c1a0d5e113c332e6bbe7887eb378b2"
   },
   {
-    "url": "styles.34e5e8088bedc8d33e7b.css",
-    "revision": "17c1cfacca3872454982f52cbee4cbd7"
+    "url": "styles.562f09d69f44697fe6dc.css",
+    "revision": "f600e40a37ee62b46c8a8fdb49d72d34"
   }
 ]);
