@@ -9,11 +9,11 @@
 <header id="rs-header" class="header-fix" *ngIf="data.title">
   <nav class="navbar">
     <ul>
-      <li class="ui-menu-color02"><a (click)="goToSection('#summary')" href="javascript:void(0)"><i class="fa fa-file-text"></i><span>{{ data.summary.heading }}</span></a></li>
-      <li class="ui-menu-color05"><a (click)="goToSection('#skills')" href="javascript:void(0)"><i class="fa fa-magic"></i><span>{{ data.skills.label }}</span></a></li>
-      <li class="ui-menu-color03"><a (click)="goToSection('#worksample')" href="javascript:void(0)"><i class="fa fa-cubes"></i><span>{{ data.worksample.label }}</span></a></li>
-      <li class="ui-menu-color04"><a (click)="goToSection('#experience')" href="javascript:void(0)"><i class="fa fa-briefcase"></i><span>{{ data.experience.label }}</span></a></li>
-      <li class="ui-menu-color01"><a (click)="goToSection('#education')" href="javascript:void(0)"><i class="fa fa-graduation-cap"></i><span>{{ data.education.label }}</span></a></li>
+      <li class="ui-menu-color02"><a (click)="goToSection('#summary')" href="javascript:void(0)" aria-labelledby="summaryLabel"><i class="fa fa-file-text"></i><span id="summaryLabel">{{ data.summary.heading }}</span></a></li>
+      <li class="ui-menu-color05"><a (click)="goToSection('#skills')" href="javascript:void(0)" aria-labelledby="skillsLabel"><i class="fa fa-magic"></i><span id="skillsLabel">{{ data.skills.label }}</span></a></li>
+      <li class="ui-menu-color03"><a (click)="goToSection('#worksample')" href="javascript:void(0)" aria-labelledby="worksampleLabel"><i class="fa fa-cubes"></i><span id="worksampleLabel">{{ data.worksample.label }}</span></a></li>
+      <li class="ui-menu-color04"><a (click)="goToSection('#experience')" href="javascript:void(0)" aria-labelledby="experienceLabel"><i class="fa fa-briefcase"></i><span id="experienceLabel">{{ data.experience.label }}</span></a></li>
+      <li class="ui-menu-color01"><a (click)="goToSection('#education')" href="javascript:void(0)" aria-labelledby="educationLabel"><i class="fa fa-graduation-cap"></i><span id="educationLabel">{{ data.education.label }}</span></a></li>
     </ul>
   </nav>
 </header>

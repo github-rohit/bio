@@ -23,7 +23,7 @@ workbox.routing.registerRoute(
 );
 workbox.routing.registerRoute(
   'https://about-my-bio.firebaseio.com/bio.json',
-  workbox.strategies.cacheFirst(),
+  workbox.strategies.staleWhileRevalidate()
 );
 
 workbox.precaching.precacheAndRoute([]);
