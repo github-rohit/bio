@@ -1,10 +1,17 @@
 body {
 	color: #3f3f3f;
-	font: 14px/1.7 'Merriweather', serif;
+	font: 16px/1.7 'Merriweather', serif;
     font-weight: 300;
     background: #FFF;
 }
-
+.small.text-muted {
+	color: #666;
+}
+a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-decoration: underline;
+}
 a:hover {
 	text-decoration: none;
 }
@@ -32,7 +39,7 @@ h2.title {
 .small-summary {
 	color: #000;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	margin-bottom: 0;
 }
 .main-section-right p{

@@ -52,7 +52,7 @@
           <h2 class="section-heading">{{ data.skills.label }}</h2>
           <ng-container *ngFor="let item of data.skills.description">
             <h3 class="section-sub-heading margin-top">{{ item.label }}</h3>
-            <ul class="mobile-ul">
+            <ul class="mobile-ul small">
               <li *ngFor="let skill of item.skills">{{ skill.short_name }}</li>
             </ul>
           </ng-container>
@@ -67,7 +67,7 @@
               <i>{{ item.role }}</i>
             </div>
             <p class="small text-muted">{{ item.from }} <ng-container *ngIf="item.to" >- {{ item.to }}</ng-container></p>
-            <p>{{ item.description }}, {{ item.location }}</p>
+            <p class="small">{{ item.description }}, {{ item.location }}</p>
           </ng-container>
           </section>
       </div>
@@ -102,7 +102,7 @@
               <i>{{ item.role }}</i>
             </div>
             <p class="small text-muted">{{ item.from }} <ng-container *ngIf="item.to" >- {{ item.to }}</ng-container></p>
-            <p>{{ item.description }}, {{ item.location }}</p>
+            <p class="small">{{ item.description }}, {{ item.location }}</p>
           </ng-container>
           </section>
       </div>
